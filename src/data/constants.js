@@ -25,6 +25,10 @@ export const tableColorStripHeight = 7;
 export const pngExportPixelRatio = 4;
 export const minAreaSize = 120;
 
+// safety margin (in pixels) added around tables to prevent connectors from
+// overlapping table bodies. This value is used by the routing algorithm.
+export const safetyMargin = 20;
+
 export const Cardinality = {
   ONE_TO_ONE: "one_to_one",
   ONE_TO_MANY: "one_to_many",
