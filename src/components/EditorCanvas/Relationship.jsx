@@ -28,6 +28,8 @@ export default function Relationship({ data }) {
       endFieldIndex: endTable.fields.findIndex((f) => f.id === data.endFieldId),
       startTable: { x: startTable.x, y: startTable.y },
       endTable: { x: endTable.x, y: endTable.y },
+      startTableId: startTable.id,
+      endTableId: endTable.id,
     };
   }, [tables, data]);
 
