@@ -1,14 +1,4 @@
-import { render } from '@testing-library/react'
-import { BrowserRouter } from 'react-router-dom'
-
-// Custom render function that includes providers
-export function renderWithRouter(ui, options = {}) {
-  const Wrapper = ({ children }) => (
-    <BrowserRouter>{children}</BrowserRouter>
-  )
-
-  return render(ui, { wrapper: Wrapper, ...options })
-}
+// Test utilities for common testing patterns
 
 // Mock data generators
 export const createMockTable = (overrides = {}) => ({
