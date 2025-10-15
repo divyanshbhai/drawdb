@@ -115,7 +115,7 @@ export default function Relationship({ data }) {
       <g className="select-none group" onDoubleClick={edit}>
         {/* invisible wider path for better hover ux */}
         <path
-          d={calcPath(pathValues, settings.tableWidth)}
+          d={calcPath(pathValues, settings.tableWidth, 1, tables)}
           fill="none"
           stroke="transparent"
           strokeWidth={12}
@@ -123,7 +123,7 @@ export default function Relationship({ data }) {
         />
         <path
           ref={pathRef}
-          d={calcPath(pathValues, settings.tableWidth)}
+          d={calcPath(pathValues, settings.tableWidth, 1, tables)}
           className="relationship-path"
           fill="none"
           cursor="pointer"
