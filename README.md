@@ -54,6 +54,24 @@ npm install
 npm run build
 ```
 
+### Testing
+
+```bash
+# Run tests in watch mode
+npm run test
+
+# Run tests once
+npm run test:run
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run tests with UI
+npm run test:ui
+```
+
+For detailed testing information, see [TESTING.md](TESTING.md).
+
 ### Docker Build
 
 ```bash
